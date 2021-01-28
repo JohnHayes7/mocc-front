@@ -1,0 +1,31 @@
+.head-foot{
+    height: 50px;
+    background-color: rgba(50, 50, 50, 0.541);
+   
+}
+
+#company{
+    margin-right: 5%;
+    margin-left: 1%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+
+.category{
+    color: white;
+    background-color: rgba(0,0,0,0.1);
+    padding: 2.5%;
+    width: 100px;
+    text-align: center;
+    border-right: 1px solid black;
+    margin-top: 300px;
+    transition:0.3s;
+    
+}
+
+.category:hover div{
+    transform: scaleY(1.5);
+    transform-origin: bottom;
+}

@@ -1,0 +1,13 @@
+import { ClientConfiguration } from "../config/ClientConfiguration";
+import { BaseClient } from "./BaseClient";
+import { RefreshTokenRequest } from "../request/RefreshTokenRequest";
+import { AuthenticationResult } from "../response/AuthenticationResult";
+/**
+ * OAuth2.0 refresh token client
+ */
+export declare class RefreshTokenClient extends BaseClient {
+    constructor(configuration: ClientConfiguration);
+    acquireToken(request: RefreshTokenRequest): Promise<AuthenticationResult>;
+    private executeTokenRequest;
+    private createTokenRequestBody;
+}

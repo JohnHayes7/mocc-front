@@ -1,0 +1,89 @@
+.project-div{
+    margin: 1%;
+    margin-top: 2%;
+    /* height: 1000px; */
+    border: 3px solid rgba(0,0,0,0.2);
+}
+
+.project-header{
+    background-color: rgba(50, 50, 50, 0.541) ;
+    position: relative;
+    height: 100px;
+    display: flex;
+    color: whitesmoke;
+}
+
+#login-opts{
+    border: 1px solid rgba(0,0,0,0.2);
+    position: absolute;
+    right: 0px;
+    height: 98px;
+    width: 250px;
+}
+
+.asset-display{
+    border: 1px solid rgba(0,0,0,0.2);
+    width: 80%;
+    margin-left: 10px;
+    padding-left: 1%;
+    margin-top: 1%;
+    /* height: 1500px; */
+}
+
+#asset-info{
+    margin-top: 3%;
+    display: flex;
+}
+
+.selected-asset-display{
+    border: 1px solid rgba(0,0,0,0.2);
+    margin-left: 50px;
+    padding-left: 1%;
+    margin-top: 1%;
+    width: 80%;
+    background-color:rgba(90, 199, 109, 0.521); 
+}
+
+.asset-details-column{
+    width: 25%;
+}
+
+.selection-column{
+    width: 40%;
+    margin-left: 5%;
+}
+
+.asset-text{
+    width:70%
+}
+
+.selection-div{
+    border: 1px solid rgba(0,0,0,0.2);
+    width: 150%;
+    height: 150px;
+    padding: .5%;
+    background-color: rgba(50, 50, 50, 0.541);
+    color: whitesmoke;
+    display: flex;
+    
+}
+
+#options{
+    padding-top: 3.8%;
+    padding-left: 1%;
+    /* margin-left: 1px; */
+    border-left: 1px solid black;
+}
+
+#reviewer-info{
+    width: 300px;
+    padding-top: 3.8%;
+    padding-left: .5%;
+    /* margin-left: 1px; */
+    border-left: 1px solid black;
+}
+
+.reviewer-name{
+    font-size: 1.5em;
+    font-weight: 300;
+}

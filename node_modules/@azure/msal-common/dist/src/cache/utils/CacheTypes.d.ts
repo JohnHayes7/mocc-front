@@ -1,0 +1,34 @@
+import { AccountEntity } from "../entities/AccountEntity";
+import { IdTokenEntity } from "../entities/IdTokenEntity";
+import { AccessTokenEntity } from "../entities/AccessTokenEntity";
+import { RefreshTokenEntity } from "../entities/RefreshTokenEntity";
+import { AppMetadataEntity } from "../entities/AppMetadataEntity";
+export declare type AccountCache = Record<string, AccountEntity>;
+export declare type IdTokenCache = Record<string, IdTokenEntity>;
+export declare type AccessTokenCache = Record<string, AccessTokenEntity>;
+export declare type RefreshTokenCache = Record<string, RefreshTokenEntity>;
+export declare type AppMetadataCache = Record<string, AppMetadataEntity>;
+export declare type CredentialCache = {
+    idTokens: IdTokenCache;
+    accessTokens: AccessTokenCache;
+    refreshTokens: RefreshTokenCache;
+};
+/**
+ * Account:	<home_account_id>-<environment>-<realm*>
+ */
+export declare type AccountFilter = {
+    homeAccountId?: string;
+    environment?: string;
+    realm?: string;
+};
+/**
+ * Credential:	<home_account_id*>-<environment>-<credential_type>-<client_id>-<realm*>-<target*>
+ */
+export declare type CredentialFilter = {
+    homeAccountId?: string;
+    environment?: string;
+    credentialType?: string;
+    clientId?: string;
+    realm?: string;
+    target?: string;
+};
